@@ -1,0 +1,44 @@
+body {
+    background: url("bckground.jpg");
+}
+
+.snapshot {
+    transition: all 0.1s linear;
+}
+
+.snapshot:hover {
+    background-color: rgb(166, 242, 112);
+    color: #333;
+}
+
+canvas {
+    border-style: dashed;
+    border-color: black;
+    animation-name: animate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes animate {
+    0% {
+        box-shadow: 5px 5px 10px 3px #95ff00;
+    }
+
+    25% {
+        box-shadow: 5px 5px 10px 3px #003cff;
+    }
+
+    50% {
+        box-shadow: 5px 5px 10px 3px #00fbff;
+    }
+
+    75% {
+        box-shadow: 5px 5px 10px 3px #ff0000;
+    }
+
+    100% {
+        box-shadow: 5px 5px 10px 3px #ccff00;
+    }
+}

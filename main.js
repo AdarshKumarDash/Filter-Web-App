@@ -1,5 +1,10 @@
 noseY = "";
 noseX = "";
+
+function preload() {
+    mustacheimg = loadImage("https://i.postimg.cc/sgyg1yXK/mustache-161330-1280.webp");
+}
+
 function setup() {
     canvas = createCanvas(640, 480);
     canvas.center();
@@ -11,6 +16,7 @@ function setup() {
 
 function draw() {
     image(video,  0, 0, 640, 480);
+    image(mustacheimg, noseX - 110, noseY - 80);
 }
 
 function takesnap() {
